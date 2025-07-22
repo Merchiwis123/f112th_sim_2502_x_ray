@@ -21,8 +21,8 @@ def generate_launch_description():
                     parameters=[joy_params],
     )
 
-    teleop_node = Node(package='teleop_twist_joy', 
-                    executable='teleop_node',
+    teleop_node = Node(package='f112th_sim_2502_x_ray', 
+                    executable='py_node.py',
                     name="teleop_node",
                     parameters=[joy_params],
     )
