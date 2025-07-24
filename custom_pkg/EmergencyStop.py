@@ -39,4 +39,5 @@ class EmergencySStop(Node):
             movin.angular.z = 0.0
             self.publisher.publish(movin)
             self.get_logger().info('Cerca de colisión')
+            
         
