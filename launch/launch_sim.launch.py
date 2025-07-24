@@ -59,8 +59,12 @@ def generate_launch_description():
                     executable='twist_mux',
                     parameters=[twist_mux_params,{'use_sim_time': True}],
                     remappings=[('/cmd_vel_out','/cmd_vel')]
+    
     )
-
+    emergencyss = Node(package='f112th_sim_2502_x_ray', 
+                              executable='paro.py', 
+                               name ="emergencyss_node"
+    )
     
 
 # Launch them all!
@@ -71,4 +75,5 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         diff_drive_spawner,
-        joint_broad_spawner,])
+        joint_broad_spawner,
+        emergencyss,])

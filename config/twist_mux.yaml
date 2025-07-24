@@ -9,3 +9,7 @@ twist_mux:
         topic   : cmd_vel_joy
         timeout : 0.5
         priority: 100
+      emergencyss  : 
+        topic   : emergency
+        timeout : 0.5
+        priority: 200
