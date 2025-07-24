@@ -41,6 +41,12 @@ install(
   )
 
 install(
+  PROGRAMS 
+  nodes/prueba.py
+  DESTINATION lib/${PROJECT_NAME}
+  )
+
+install(
   DIRECTORY config description launch worlds
   DESTINATION share/${PROJECT_NAME}
 )

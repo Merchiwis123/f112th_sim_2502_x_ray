@@ -13,3 +13,7 @@ twist_mux:
         topic   : emergency
         timeout : 0.5
         priority: 200
+      continuoss:
+        topic   : normal
+        timeout : 0.5
+        priority: 50
