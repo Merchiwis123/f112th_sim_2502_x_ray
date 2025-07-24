@@ -29,7 +29,11 @@ install(
   nodes/py_node.py
   DESTINATION lib/${PROJECT_NAME}
   )
-
+install(
+  PROGRAMS 
+  nodes/distancia.py
+  DESTINATION lib/${PROJECT_NAME}
+  )
 
 install(
   DIRECTORY config description launch worlds
