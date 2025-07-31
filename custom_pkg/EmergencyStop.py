@@ -26,7 +26,7 @@ class EmergencySStop(Node):
 
         if valid_ranges:
             min_distance = min(valid_ranges)
-            if min_distance <= 0.45:
+            if min_distance <= 0.32:
                 self.flagstop = 1
             else:
                 self.flagstop = 0

@@ -17,3 +17,7 @@ twist_mux:
         topic   : normal
         timeout : 0.5
         priority: 50
+      wall_follow:
+        topic   : cmd_vel_ctrl
+        timeout : 0.5
+        priority: 50
